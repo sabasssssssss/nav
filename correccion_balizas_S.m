@@ -149,11 +149,6 @@ function angulo = normalizar_angulo(angulo)
     end
 end
 
-function [fila, columna] = apolo2matriz(x_apolo, y_apolo)
-    fila    = 10 - x_apolo;
-    columna = 33 - y_apolo;
-    fila = round(fila);
-    columna = round(columna);
-end
+% La conversión Apolo -> matriz se realiza usando la función global apolo2matriz.
 
 

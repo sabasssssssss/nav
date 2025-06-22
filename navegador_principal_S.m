@@ -376,19 +376,8 @@ function balizas = detectar_balizas()
     balizas = []; % Reemplazar con la lógica real
 end
 
-% === FUNCIÓN DE TRANSFORMACIÓN APOLO -> MATRIZ BINARIA CORREGIDA ===
-% Ahora devuelve [fila, columna] en ese orden
-function [fila, columna] = apolo2matriz(x_apolo, y_apolo)
-    fila    = 10 - x_apolo;
-    columna = 33 - y_apolo;
-    fila = round(fila);
-    columna = round(columna);
-end
-
-% === FUNCIÓN DE TRANSFORMACIÓN MATRIZ -> APOLO ===
-function [x_apolo, y_apolo] = matriz2apolo(fila, columna)
-    x_apolo = 10 - fila;  % Conversión de fila a coordenada Apolo
-    y_apolo = 33 - columna; % Conversión de columna a coordenada Apolo
-end
+% Las funciones de transformación de coordenadas se han movido a archivos
+% independientes (apolo2matriz.m y matriz2apolo.m) para evitar duplicación y
+% asegurar resultados consistentes en todo el proyecto.
 
 

@@ -65,18 +65,5 @@ hold off;
 
 disp('Modifica rotacion_mapa_deg y vuelve a ejecutar para ajustar.');
 
-% === FUNCIÓN DE TRANSFORMACIÓN APOLO->MAPA ===
-function [fila, columna] = apolo2matriz(x_apolo, y_apolo)
-    disp(['[DEBUG] Entrando a apolo2matriz con x_apolo=', num2str(x_apolo), ', y_apolo=', num2str(y_apolo)]);
-    fila    = 10 - x_apolo;
-    columna = 33 - y_apolo;
-    fila = round(fila);
-    columna = round(columna);
-    disp(['[DEBUG] Salida de apolo2matriz: fila=', num2str(fila), ', columna=', num2str(columna)]);
-end
-
-% === FUNCIÓN DE TRANSFORMACIÓN MAPA->APOLO ===
-function [x_apolo, y_apolo] = matriz2apolo(fila, columna)
-    x_apolo = 10 - fila;
-    y_apolo = 33 - columna;
-end 
+% Las funciones de conversión se utilizan ahora desde los archivos compartidos
+% apolo2matriz.m y matriz2apolo.m para coincidir con el resto del código.

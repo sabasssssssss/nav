@@ -163,12 +163,7 @@ function valor = getfield_with_default(estructura, campo, valor_default)
     end
 end
 
-% === FUNCIÓN DE TRANSFORMACIÓN APOLO -> MATRIZ BINARIA CORREGIDA ===
-function [fila, columna] = apolo2matriz(x_apolo, y_apolo)
-    fila    = 10 - x_apolo;
-    columna = 33 - y_apolo;
-    fila = round(fila);
-    columna = round(columna);
-end
+% La conversión de coordenadas se delega ahora en la función global
+% apolo2matriz.m para mantener coherencia en todo el código.
 
 
