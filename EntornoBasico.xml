@@ -1,0 +1,297 @@
+<root>
+	<World>
+		<WorldInfo name="Trabajo Guiado y Navegación 2024-25">
+			<RegisterNumber number="16462"/>	<!-- Matricula Fernando -->
+			<RegisterNumber number="24092"/>	<!-- Matricula Sergio -->
+			<RegisterNumber number="24293"/>	<!-- Matricula Jose -->
+		</WorldInfo>
+
+	<!-- Definición de una habitación como un conjunto de paredes -->
+		<FaceSetPart name="Sala Cuadrada 8x8">
+			<face>
+				<vertex>
+					{4.000000 , -4.000000, 0}
+					{4.000000 , 4.000000, 0}
+					{-4.000000 , 4.000000, 0}
+					{-4.000000 , -4.000000, 0}
+				</vertex>
+				<colour r="0.2" g="0.2" b="1"/>
+			</face>
+			<face>
+				<vertex>
+					{0.000000 , 0.000000, 0}
+					{0.000000 , 2.000000, 0}
+					{8.000000 , 2.000000, 0}
+					{8.000000 , 0.000000, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 1.570796}</orientation>
+				<position>{4.000000 , -4.000000, 0}</position>
+				<colour r="0.2" g="0.2" b="0.8"/>
+			</face>
+			<face>
+				<vertex>
+					{0.000000 , 0.000000, 0}
+					{0.000000 , 2.000000, 0}
+					{8.000000 , 2.000000, 0}
+					{8.000000 , 0.000000, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 3.141593}</orientation>
+				<position>{4.000000 , 4.000000, 0}</position>
+				<colour r="0.2" g="0.2" b="0.8"/>
+			</face>
+			<face>
+				<vertex>
+					{0.000000 , 0.000000, 0}
+					{0.000000 , 2.000000, 0}
+					{8.000000 , 2.000000, 0}
+					{8.000000 , 0.000000, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, -1.570796}</orientation>
+				<position>{-4.000000 , 4.000000, 0}</position>
+				<colour r="0.2" g="0.2" b="0.8"/>
+			</face>
+			<face>
+				<vertex>
+					{0.000000 , 0.000000, 0}
+					{0.000000 , 2.000000, 0}
+					{8.000000 , 2.000000, 0}
+					{8.000000 , 0.000000, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 0.000000}</orientation>
+				<position>{-4.000000 , -4.000000, 0}</position>
+				<colour r="0.2" g="0.2" b="0.8"/>
+			</face>
+		</FaceSetPart>
+
+	<!-- Definición de un muro -->
+		<PrismaticPart height="2" name="Muro">
+			<position>{-4,1,0}</position>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,1,0}
+					{6,1,0}
+					{6,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.2" b="0.8"/>
+		</PrismaticPart>
+
+	<!-- Definición de la carpa de primeros auxilios -->
+		<PrismaticPart height="2" name="Pilar Carpa 1">
+			<position>{0.95,-3.05,0}</position>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="2" name="Pilar Carpa 2">
+			<position>{2.95,-3.05,0}</position>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="2" name="Pilar Carpa 3">
+			<position>{2.95,-1.05,0}</position>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="2" name="Pilar Carpa 4">
+			<position>{0.95,-1.05,0}</position>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="1.9" name="Viga Carpa 1">
+			<position>{0.95,-1.05,1.9}</position>
+			<orientation>{1.570796 , 0.000000, 0}</orientation>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="1.9" name="Viga Carpa 2">
+			<position>{2.95,-1.05,1.9}</position>
+			<orientation>{1.570796 , 0.000000, 0}</orientation>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="1.9" name="Viga Carpa 3">
+			<position>{2.95,-3.05,1.9}</position>
+			<orientation>{0.000000, -1.570796, 0}</orientation>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<PrismaticPart height="1.9" name="Viga Carpa 4">
+			<position>{2.95,-1.05,1.9}</position>
+			<orientation>{0.000000, -1.570796, 0}</orientation>
+			<face>
+				<vertex>
+					{0,0,0}
+					{0,0.1,0}
+					{0.1,0.1,0}
+					{0.1,0,0}
+				</vertex>
+			</face>
+			<colour r="0.2" g="0.8" b="0.2"/>
+		</PrismaticPart>
+		<FaceSetPart name="Paneles Carpa">
+			<face>
+				<vertex>
+					{0.05 , 0.05, 0}
+					{0.05 , 2.05, 0}
+					{2.05 , 2.05, 0}
+					{2.05 , 0.05, 0}
+				</vertex>
+				<position>{1 , -3, 2}</position>
+				<colour r="0.2" g="0.8" b="0.2"/>
+			</face>
+			<face>
+				<vertex>
+					{0, 0, 0}
+					{1.9, 0, 0}
+					{1.9, 1.95, 0}
+					{0, 1.95, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 0}</orientation>
+				<position>{1.05 , -3, 0}</position>
+				<colour r="0.2" g="0.8" b="0.2"/>
+			</face>
+			<face>
+				<vertex>
+					{0, 0, 0}
+					{1.9, 0, 0}
+					{1.9, 1.95, 0}
+					{0, 1.95, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 0}</orientation>
+				<position>{1.05 , -1, 0}</position>
+				<colour r="0.2" g="0.8" b="0.2"/>
+			</face>
+			<face>
+				<vertex>
+					{0, 0, 0}
+					{1.9, 0, 0}
+					{1.9, 1.95, 0}
+					{0, 1.95, 0}
+				</vertex>
+				<orientation>{1.570796 , 0.000000, 1.570796}</orientation>
+				<position>{3 , -2.95, 0}</position>
+				<colour r="0.2" g="0.8" b="0.2"/>
+			</face>
+		</FaceSetPart>
+
+	<!-- Definición de un robot Pioner3at , posicion y orientación inicial-->
+		<Pioneer3ATSim name="Limpiator">
+		  <orientation>	{0,0,0} </orientation>
+		  <position>	{-3,-3,0}	</position>
+		</Pioneer3ATSim>
+
+	<!-- Definición de un laser unido al robot , posicion y orientación relativa-->	
+		<LMS100Sim name="LMS100" linkTo="$Limpiator$">
+		  <position>	{0.1,0,0.4} </position>
+		  <colour r="0" g="1" b="0"/>
+		</LMS100Sim>
+
+	<!-- Definición de 3 ultrasonidos frontales unidos al robot , posicion y orientación relativa-->		
+		<UltrasonicSensor name = "uc0" linkTo="$Limpiator$">
+		  <orientation>	{0,-0.1,0}	</orientation>
+		  <position>	{0.2,0,0.2}	</position>
+		  <colour r="0" g="1" b="0"/>
+		</UltrasonicSensor>
+		<UltrasonicSensor name="ul1" linkTo="$Limpiator$">
+		  <orientation>	{0,-0.1,0.7}    </orientation>
+		  <position>	{0.18,0.11,0.2}	</position>
+		  <colour r="0" g="1" b="0"/>
+		</UltrasonicSensor>
+		<UltrasonicSensor name="ur1" linkTo="$Limpiator$">
+		  <orientation>	{0,-0.1,-0.7}    </orientation>
+		  <position>	{0.18,-0.11,0.2} </position>
+		  <colour r="0" g="1" b="0"/>
+		</UltrasonicSensor>
+
+	<!-- Definición de las balizas-->
+		<!-- Asociadas a los limites del mapa -->
+		<LandMark  name ="LM1" mark_id="1" linkTo="$Sala Cuadrada 8x8$">
+			  <position> {3.9,-3.9,0.2}	</position>
+		</LandMark>
+		<LandMark  name ="LM2" mark_id="2" linkTo="$Sala Cuadrada 8x8$">
+			  <position> {3.9,3.9,0.2} </position>
+		</LandMark>
+		<LandMark  name ="LM3" mark_id="3" linkTo="$Sala Cuadrada 8x8$">
+			  <position> {-3.9,3.9,0.2} </position>
+		</LandMark>
+		<LandMark  name ="LM4" mark_id="4" linkTo="$Sala Cuadrada 8x8$">
+			  <position> {-3.9,-3.9,0.2} </position>
+		</LandMark>
+		<!-- Asociadas al obstáculo -->
+		<LandMark  name ="LM5" mark_id="5" linkTo="$Muro$">
+			  <position> {0.1,-0.1,0.2}	</position>
+		</LandMark>
+		<LandMark  name ="LM6" mark_id="6" linkTo="$Muro$">
+			  <position> {0.1,1.1,0.2} </position>
+		</LandMark>
+		<LandMark  name ="LM7" mark_id="7" linkTo="$Muro$">
+			  <position> {6.1,1.1,0.2} </position>
+		</LandMark>
+		<LandMark  name ="LM8" mark_id="8" linkTo="$Muro$">
+			  <position> {6.1,-0.1,0.2} </position>
+		</LandMark>
+		<!-- Asociadas a la carpa -->
+		<LandMark  name ="LM9" mark_id="9" linkTo="$Pilar Carpa 1$">
+			  <position>{-0.1,0.05,0.2}</position>
+		</LandMark>
+		<LandMark  name ="LM10" mark_id="10" linkTo="$Pilar Carpa 2$">
+			  <position>{0.2,-0.1,0.2}</position>
+		</LandMark>
+		<LandMark  name ="LM11" mark_id="11" linkTo="$Pilar Carpa 3$">
+			  <position>{0.1,0.2,0.2}</position>
+		</LandMark>
+		<LandMark  name ="LM12" mark_id="12" linkTo="$Pilar Carpa 4$">
+			  <position>{-0.1,0.05,0.2}</position>
+		</LandMark>
+	</World>
+</root>
