@@ -17,4 +17,8 @@ function [x_apolo, y_apolo] = matriz2apolo(fila, columna)
     if x_apolo < 0 || x_apolo > 10 || y_apolo < 0 || y_apolo > 33
         error('Coordenadas resultantes fuera de los límites permitidos.');
     end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> cccd5430266764927947a06de4fe1bc4c4dcf368
